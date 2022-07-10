@@ -1,5 +1,13 @@
 /** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
 module.exports = {
-  preset: 'ts-jest',
-  testEnvironment: 'node',
+  "testEnvironment": "jsdom",
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "vue"
+  ],
+  "transform": {
+    "^.+\\.js$": "babel-jest",
+    "^.+\\.vue$": "@vue/vue3-jest"
+  }
 };
