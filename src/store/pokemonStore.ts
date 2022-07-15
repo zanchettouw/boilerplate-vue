@@ -23,7 +23,7 @@ export const pokemonStore = defineStore('pokemonStore', {
   actions: {
     async fetchPokemonList () {
       try {
-        const response = await axios.get(`${import.meta.env.VITE_API_BASE}/pokemon?limit=-1`)
+        const response = await axios.get('https://pokeapi.co/api/v2/pokemon?limit=-1')
         this.pokemonList = response.data.results
       } catch (error) {
         console.log(error)
