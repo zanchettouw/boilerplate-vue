@@ -16,7 +16,7 @@ const props = defineProps({
   },
 })
   const getImg = computed(() => {
-    return `src/assets/images/types/${props.type}.png`
+    return `/types/${props.type}.png`
   })
 
 </script>
