@@ -1,0 +1,99 @@
+/* BUTTONS STYLE */
+
+.btn-primary {
+  @apply font-bold border-b-4 rounded-b-md drop-shadow-lg border-pokemon-blue-700 py-2 w-1/2 rounded-md bg-pokemon-blue-500 text-white ease-in-out;
+}
+
+.btn-primary:hover {
+  @apply bg-pokemon-blue-600;
+}
+
+.btn-primary:active {
+  @apply mt-1 pb-1 border-transparent border-b-4;
+}
+
+.btn-primary-active {
+  @apply mt-1 pb-1 border-transparent border-b-4 bg-pokemon-blue-400;
+}
+
+.btn-secondary {
+  @apply bg-transparent drop-shadow-lg border-b-4 rounded-b-md text-pokemon-blue-500 font-semibold px-4 border-2 border-pokemon-blue-500 rounded-md ease-in-out;
+}
+
+.btn-secondary:active {
+  @apply mt-0.5 border-b-2;
+}
+
+.btn-secondary:hover {
+  @apply text-pokemon-blue-600 border-pokemon-blue-600;
+}
+
+.sort-btn {
+  @apply bg-transparent drop-shadow-lg border-b-4 rounded-b-md text-pokemon-blue-500 px-3 font-semibold border-2 border-pokemon-blue-500 rounded-md ease-in-out;
+  @apply flex flex-row justify-center items-center;
+}
+
+.sort-btn:active {
+  @apply mt-0.5 border-b-2 bg-pokemon-blue-500 text-white;
+}
+
+.sort-btn-active {
+  @apply mt-0.5 border-b-2 bg-pokemon-blue-500 text-white;
+}
+
+/* TYPE COLORS */
+
+.btn-type-fire {
+  @apply peer-checked:bg-fire border-fire peer-checked:text-white;
+}
+.btn-type-water {
+  @apply peer-checked:bg-water border-water peer-checked:text-white;
+}
+.btn-type-grass {
+  @apply peer-checked:bg-grass border-grass peer-checked:text-white;
+}
+.btn-type-electric {
+  @apply peer-checked:bg-electric border-electric peer-checked:text-white;
+}
+.btn-type-psychic {
+  @apply peer-checked:bg-psychic border-psychic peer-checked:text-white;
+}
+.btn-type-ice {
+  @apply peer-checked:bg-ice border-ice peer-checked:text-white;
+}
+.btn-type-fighting {
+  @apply peer-checked:bg-fighting border-fighting peer-checked:text-white;
+}
+.btn-type-flying {
+  @apply peer-checked:bg-flying border-flying peer-checked:text-white;
+}
+.btn-type-poison {
+  @apply peer-checked:bg-poison border-poison peer-checked:text-white;
+}
+.btn-type-ground {
+  @apply peer-checked:bg-ground border-ground peer-checked:text-white;
+}
+.btn-type-rock {
+  @apply peer-checked:bg-rock border-rock peer-checked:text-white;
+}
+.btn-type-bug {
+  @apply peer-checked:bg-bug border-bug peer-checked:text-white;
+}
+.btn-type-dragon {
+  @apply peer-checked:bg-dragon border-dragon peer-checked:text-white;
+}
+.btn-type-ghost {
+  @apply peer-checked:bg-ghost border-ghost peer-checked:text-white;
+}
+.btn-type-dark {
+  @apply peer-checked:bg-dark border-dark peer-checked:text-white;
+}
+.btn-type-steel {
+  @apply peer-checked:bg-steel border-steel peer-checked:text-white;
+}
+.btn-type-fairy {
+  @apply peer-checked:bg-fairy border-fairy peer-checked:text-white;
+}
+.btn-type-normal {
+  @apply peer-checked:bg-normal border-normal peer-checked:text-white;
+}

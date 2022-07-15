@@ -1,17 +1,19 @@
 <template>
-{{getPokemons}}
+  <main class="container-auto-center">
+    <h1>teste</h1>
+    <SimpleCardsList />
+  </main>
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, computed } from 'vue';
-import { pokemonStore } from '@/store/pokemonStore';
-const store = pokemonStore();
+import { onMounted } from 'vue'
+import SimpleCardsList from '@/components/Cards/SimpleCard/SimpleCardsList.vue'
+import { pokemonStore } from '@/store/pokemonStore'
 
-const getPokemons = computed(() => {
-  return store.getPokemons
-})
+const store = pokemonStore()
 
 onMounted(async () => {
-  await store.fetchPokemonList();
+  await store.fetchPokemonList()
+  await store.fetchPokemonDetails()
 })
 </script>

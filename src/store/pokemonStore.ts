@@ -23,23 +23,18 @@ export const pokemonStore = defineStore('pokemonStore', {
   actions: {
     async fetchPokemonList () {
       try {
-        const response = await axios.get(`${import.meta.env.VITE_API_BASE}/pokemon?limit=10`)
-        this.pokemonList = response.data
+        const response = await axios.get(`${import.meta.env.VITE_API_BASE}/pokemon?limit=-1`)
+        this.pokemonList = response.data.results
       } catch (error) {
         console.log(error)
       }
     },
-    async fetchPokemonDetails (pokemonID: number) {
-      try {
-        try {
-          const response = await axios.get(`${import.meta.env.VITE_API_BASE}/pokemon?limit=-1`)
-          this.pokemons = response.data
-        } catch (error) {
-          console.log(error)
-        }
-      } catch (error) {
-        console.log(error)
-      }
+    async fetchPokemonDetails () {
+      this.pokemons = []
+      this.pokemonList.map(async (pokemon) => {
+        const response = await axios.get(`${pokemon.url}`)
+        this.pokemons.push(response.data)
+      })
     }
   }
 })

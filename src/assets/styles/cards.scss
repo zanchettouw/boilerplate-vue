@@ -1,0 +1,531 @@
+/* SKELETON */
+
+.skeleton-0 {
+  @apply bg-gray-100;
+}
+.skeleton-1 {
+  @apply bg-gray-200;
+}
+
+.skeleton-1-pulse {
+  @apply bg-gray-300 animate-pulse;
+}
+
+.skeleton-2 {
+  @apply bg-gray-300;
+}
+
+.skeleton-2-pulse {
+  @apply bg-gray-300 animate-pulse;
+}
+
+/* SIMPLE CARDS STYLE */
+
+.sc-container {
+  @apply flex flex-col justify-between rounded-2xl h-64 w-44 sm:h-80 sm:w-60 py-2 sm:py-3;
+}
+
+.sc-list-container {
+  @apply flex flex-wrap justify-center gap-5;
+}
+
+.sc-number-type-container {
+  @apply flex items-center flex-row justify-between mx-3;
+}
+
+.sc-number-wrapper {
+  @apply flex items-center justify-items-center;
+}
+
+.sc-types-container {
+  @apply flex items-center flex-row justify-between gap-x-2;
+}
+
+.sc-type-wrapper {
+  @apply flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 rounded-full shadow-inner;
+}
+
+.sc-type-picture {
+  @apply w-5 h-5 sm:w-6 sm:h-6;
+}
+
+.sc-picture-wrapper {
+  @apply w-32 h-32 sm:w-48 sm:h-48 mx-auto;
+}
+
+.sc-name-wrapper {
+  @apply flex justify-center;
+}
+
+/* DETAILED CARD */
+
+.dc-container {
+  @apply rounded-2xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-5;
+  @apply my-4;
+}
+
+/* ----- HEADER */
+
+.dc-header {
+  @apply col-span-1 sm:col-span-2;
+  @apply md:col-span-3 flex flex-row justify-between;
+}
+
+.dc-name {
+  @apply flex flex-row gap-5 flex-1 justify-start items-center;
+  @apply capitalize font-bold text-4xl;
+}
+
+/* ----- PROFILE */
+.dc-profile-container {
+  @apply row-span-2 md:row-span-3 flex flex-col justify-between items-center rounded-2xl p-5 gap-5 sm:gap-0;
+}
+/* ---------- ID */
+.dc-profile-id-wrapper {
+  @apply flex justify-center font-bold text-3xl;
+}
+/* ---------- NAME */
+.dc-profile-name-wrapper {
+  @apply flex justify-center capitalize text-2xl;
+}
+/* ---------- PICTURE */
+.dc-profile-picture-wrapper {
+  @apply w-48 h-48 mx-auto;
+}
+/* ---------- TYPES */
+.dc-profile-types-wrapper {
+  @apply flex items-center flex-row justify-between gap-x-2;
+}
+/* ---------- HEIGHT & WEIGHT */
+.dc-profile-hw-container {
+  @apply flex flex-col gap-y-2 w-52 gap-2 px-0 sm:px-4 lg:px-0;
+}
+
+.dc-profile-hw-icon {
+  @apply w-5 md:w-6 lg:w-7;
+}
+
+.dc-profile-hw-wrapper {
+  @apply flex gap-x-4 justify-between items-center;
+}
+
+/* ----- ABOUT */
+.dc-about-container {
+  @apply p-5 md:col-span-1 rounded-2xl;
+}
+/* ---------- TITLE */
+.dc-about-title-wrapper {
+  @apply flex justify-center rounded-3xl text-xl font-semibold md:font-bold lg:text-2xl;
+}
+/* ---------- CONTENT */
+.dc-about-content-wrapper {
+  @apply mt-1 p-2 lg:sm:mt-4 text-lg text-left font-semibold;
+}
+
+/* ----- STATS */
+.dc-stats-container {
+  @apply flex flex-col p-5 md:row-span-2 rounded-2xl;
+}
+
+.dc-stats-list {
+  @apply flex flex-col mt-4 h-full justify-evenly;
+}
+
+/* ---------- TITLE */
+.dc-stats-title-wrapper {
+  @apply flex justify-center rounded-2xl text-xl font-semibold md:font-bold lg:text-2xl;
+}
+/* ---------- GRAPH */
+.dc-stats-graph-wrapper {
+  @apply flex items-center;
+}
+
+.dc-stats-graph-pct {
+  @apply text-xs font-medium text-blue-100 text-center p-0.5 leading-none;
+}
+
+/* ----- ABILITIES */
+.dc-abilities-container {
+  @apply p-5 rounded-2xl;
+}
+/* ---------- TITLE */
+.dc-abilities-title-wrapper {
+  @apply flex justify-center rounded-3xl text-xl font-semibold md:font-bold lg:text-2xl;
+}
+/* ---------- CONTENT */
+.dc-abilities-content-wrapper {
+  @apply mt-5 lg:mt-4;
+}
+
+.dc-abilities-ul {
+  @apply list-disc flex flex-col items-center gap-y-3 capitalize text-xl font-semibold mt-4;
+}
+
+/* ----- EVOLUTION */
+.dc-evolution-container {
+  @apply md:col-span-2 rounded-2xl p-5 flex flex-col justify-between;
+}
+/* ---------- TITLE */
+.dc-evolution-title-wrapper {
+  @apply flex justify-center rounded-3xl text-xl font-semibold md:font-bold lg:text-2xl;
+}
+/* ---------- EVOLUTIONS */
+.dc-evolution-evolutions-wrapper {
+  @apply flex lg:justify-center overflow-x-auto w-auto gap-5 lg:gap-16 mt-4;
+}
+
+.dc-evolution-boxes-container {
+  @apply flex flex-col items-center m-auto lg:m-0 cursor-pointer;
+}
+
+.dc-evolution-box-wrapper {
+  @apply rounded-full w-24 h-24 p-2 bg-gray-500 bg-opacity-20;
+}
+
+.dc-evolution-box-active {
+  @apply border-4;
+}
+
+.dc-evolution-box-label {
+  @apply text-center mt-1 lg:mt-4 font-semibold capitalize text-lg lg:text-xl;
+  /*hidden sm:block*/
+}
+
+/* BACKGROUNDS */
+
+.back-color-fire {
+  @apply bg-fire;
+}
+.back-color-water {
+  @apply bg-water;
+}
+.back-color-grass {
+  @apply bg-grass;
+}
+.back-color-electric {
+  @apply bg-electric;
+}
+.back-color-psychic {
+  @apply bg-psychic;
+}
+.back-color-ice {
+  @apply bg-ice;
+}
+.back-color-fighting {
+  @apply bg-fighting;
+}
+.back-color-flying {
+  @apply bg-flying;
+}
+.back-color-poison {
+  @apply bg-poison;
+}
+.back-color-ground {
+  @apply bg-ground;
+}
+.back-color-rock {
+  @apply bg-rock;
+}
+.back-color-bug {
+  @apply bg-bug;
+}
+.back-color-dragon {
+  @apply bg-dragon;
+}
+.back-color-ghost {
+  @apply bg-ghost;
+}
+.back-color-dark {
+  @apply bg-dark;
+}
+.back-color-steel {
+  @apply bg-steel;
+}
+.back-color-fairy {
+  @apply bg-fairy;
+}
+.back-color-normal {
+  @apply bg-normal;
+}
+
+/* BACKGROUNDS DARK */
+
+.back-color-fire-dark {
+  @apply bg-fire-dark;
+}
+.back-color-water-dark {
+  @apply bg-water-dark;
+}
+.back-color-grass-dark {
+  @apply bg-grass-dark;
+}
+.back-color-electric-dark {
+  @apply bg-electric-dark;
+}
+.back-color-psychic-dark {
+  @apply bg-psychic-dark;
+}
+.back-color-ice-dark {
+  @apply bg-ice-dark;
+}
+.back-color-fighting-dark {
+  @apply bg-fighting-dark;
+}
+.back-color-flying-dark {
+  @apply bg-flying-dark;
+}
+.back-color-poison-dark {
+  @apply bg-poison-dark;
+}
+.back-color-ground-dark {
+  @apply bg-ground-dark;
+}
+.back-color-rock-dark {
+  @apply bg-rock-dark;
+}
+.back-color-bug-dark {
+  @apply bg-bug-dark;
+}
+.back-color-dragon-dark {
+  @apply bg-dragon-dark;
+}
+.back-color-ghost-dark {
+  @apply bg-ghost-dark;
+}
+.back-color-dark-dark {
+  @apply bg-dark-dark;
+}
+.back-color-steel-dark {
+  @apply bg-steel-dark;
+}
+.back-color-fairy-dark {
+  @apply bg-fairy-dark;
+}
+.back-color-normal-dark {
+  @apply bg-normal-dark;
+}
+
+/* BACKGROUND GRADIENTS FROM */
+
+.back-from-fire {
+  @apply from-fire-dark;
+}
+.back-from-water {
+  @apply from-water-dark;
+}
+.back-from-grass {
+  @apply from-grass-dark;
+}
+.back-from-electric {
+  @apply from-electric-dark;
+}
+.back-from-psychic {
+  @apply from-psychic-dark;
+}
+.back-from-ice {
+  @apply from-ice-dark;
+}
+.back-from-fighting {
+  @apply from-fighting-dark;
+}
+.back-from-flying {
+  @apply from-flying-dark;
+}
+.back-from-poison {
+  @apply from-poison-dark;
+}
+.back-from-ground {
+  @apply from-ground-dark;
+}
+.back-from-rock {
+  @apply from-rock-dark;
+}
+.back-from-bug {
+  @apply from-bug-dark;
+}
+.back-from-dragon {
+  @apply from-dragon-dark;
+}
+.back-from-ghost {
+  @apply from-ghost-dark;
+}
+.back-from-dark {
+  @apply from-dark-dark;
+}
+.back-from-steel {
+  @apply from-steel-dark;
+}
+.back-from-fairy {
+  @apply from-fairy-dark;
+}
+.back-from-normal {
+  @apply from-normal-dark;
+}
+
+/* BACKGROUND GRADIENTS TO */
+
+.back-to-fire {
+  @apply to-fire;
+}
+.back-to-water {
+  @apply to-water;
+}
+.back-to-grass {
+  @apply to-grass;
+}
+.back-to-electric {
+  @apply to-electric;
+}
+.back-to-psychic {
+  @apply to-psychic;
+}
+.back-to-ice {
+  @apply to-ice;
+}
+.back-to-fighting {
+  @apply to-fighting;
+}
+.back-to-flying {
+  @apply to-flying;
+}
+.back-to-poison {
+  @apply to-poison;
+}
+.back-to-ground {
+  @apply to-ground;
+}
+.back-to-rock {
+  @apply to-rock;
+}
+.back-to-bug {
+  @apply to-bug;
+}
+.back-to-dragon {
+  @apply to-dragon;
+}
+.back-to-ghost {
+  @apply to-ghost;
+}
+.back-to-dark {
+  @apply to-dark;
+}
+.back-to-steel {
+  @apply to-steel;
+}
+.back-to-fairy {
+  @apply to-fairy;
+}
+.back-to-normal {
+  @apply to-normal;
+}
+
+/* BACKGROUND GRADIENTS TO */
+
+.back-from-detailed-300-fire {
+  @apply from-fire;
+}
+.back-to-detailed-300-fire {
+  @apply to-fire;
+}
+.back-from-water {
+  @apply from-blue-300;
+}
+.back-to-water {
+  @apply to-blue-400;
+}
+.back-from-grass {
+  @apply from-green-300;
+}
+.back-to-grass {
+  @apply to-green-300;
+}
+.back-from-electric {
+  @apply from-yellow-300;
+}
+.back-to-electric {
+  @apply to-yellow-400;
+}
+.back-from-psychic {
+  @apply from-pink-300;
+}
+.back-to-psychic {
+  @apply to-pink-400;
+}
+.back-from-ice {
+  @apply from-blue-300;
+}
+.back-to-ice {
+  @apply to-blue-300;
+}
+.back-from-fighting {
+  @apply from-pink-300;
+}
+.back-to-fighting {
+  @apply to-pink-300;
+}
+.back-from-flying {
+  @apply from-blue-300;
+}
+.back-to-flying {
+  @apply to-blue-300;
+}
+.back-from-poison {
+  @apply from-purple-300;
+}
+.back-to-poison {
+  @apply to-purple-400;
+}
+.back-from-ground {
+  @apply from-ground;
+}
+.back-to-ground {
+  @apply to-ground;
+}
+.back-from-rock {
+  @apply from-pokemon-yellow-300;
+}
+.back-to-rock {
+  @apply to-pokemon-yellow-400;
+}
+.back-from-bug {
+  @apply from-green-300;
+}
+.back-to-bug {
+  @apply to-green-400;
+}
+.back-from-dragon {
+  @apply from-blue-300;
+}
+.back-to-dragon {
+  @apply to-blue-400;
+}
+.back-from-ghost {
+  @apply from-blue-300;
+}
+.back-to-ghost {
+  @apply to-blue-400;
+}
+.back-from-dark {
+  @apply from-dark;
+}
+.back-to-dark {
+  @apply to-dark;
+}
+.back-from-steel {
+  @apply from-steel;
+}
+.back-to-steel {
+  @apply to-steel;
+}
+.back-from-fairy {
+  @apply from-fairy;
+}
+.back-to-fairy {
+  @apply to-fairy;
+}
+.back-from-normal {
+  @apply from-normal;
+}
+.back-to-normal {
+  @apply to-normal;
+}
